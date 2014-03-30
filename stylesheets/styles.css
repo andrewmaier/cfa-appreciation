@@ -1,0 +1,248 @@
+/* @override http://cfappreciation.tumblr.local:8888/stylesheets/styles.css */
+
+body{
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	background: #ddd;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#cfa-appreciation-wall{
+	padding: 1em 1em 1em 20em;
+	position: relative;
+	min-height: 100%;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+body h1{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 300px;
+	background: white;
+	font-family: Trebuchet MS;
+	text-transform: uppercase;
+	letter-spacing: 0.22em;
+	font-size: 1.75em;
+	line-height: 1.5em;
+	text-align: center;
+	display: inline;
+	font-weight: 100;
+	color: #bbb;
+	margin: 0;
+	padding-top: 200px;
+	background: url(background.png) no-repeat bottom left white;
+	background-size: 100%;
+}
+
+body h1::before{
+	background: url(logo.png) no-repeat center center;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 128px;
+	height: 128px;
+	-moz-border-radius: 100%;
+border-radius: 100%;
+left: 50%;
+margin-left: -64px;
+top: 40px;
+	
+}
+
+.note{
+	display: inline-block;
+	width: 14em;
+	min-height: 12em;
+	background: #f9efbe;
+	margin-bottom: 1em;
+	margin-right: 0.67em;
+	vertical-align: top;
+	padding: 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 1.4em;
+	text-align: left;
+	position: relative;
+	border: 1px solid #fff7d8;
+	border-bottom: none;
+	color: #3c260f;
+}
+
+.note{
+	display: inline-block;
+	width: 14em;
+	min-height: 12em;
+	background: #f9efbe;
+	margin-bottom: 1em;
+	margin-right: 0.67em;
+	vertical-align: top;
+	padding: 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 1.4em;
+	text-align: left;
+	position: relative;
+	border: 1px solid #fff7d8;
+	border-bottom: none;
+	color: #3c260f;
+}
+
+form.note{
+	padding: 0;
+}
+
+.note fieldset{
+	position: absolute;
+	left: 100%;
+	top: -1px;
+	bottom: 0;
+	z-index: 1;
+	background: #555;
+	color: white;
+	border: none;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-size: 0.6em;
+	padding: 2em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 12em;
+	-moz-border-radius: 0 1em 1em 0;
+border-radius: 0 1em 1em 0;
+}
+
+.note textarea{
+	width: 100%;
+	height: 12em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	background: none;
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	padding: 1em;
+	border-bottom: 0.5em solid ;
+}
+
+.note textarea:focus{ border-color: white; }
+.note button{
+	border: 2px solid;
+	background: transparent;
+	color: white;
+	padding: 0.5em 1em;
+	font-size: 0.8em;
+	position: absolute;
+	left: 100%;
+	bottom: 0;
+	margin-bottom: 1.6rem;
+	margin-left: 1.6rem;
+	z-index: 2;
+	
+}
+.note fieldset .field{ margin-bottom: 1.4em; }
+.note fieldset .field label{ display: block; margin-bottom: 0.4em;}
+.note fieldset .field select{ width: 10em; }
+
+.note fieldset legend{
+	display: none;
+}
+
+article::before,
+article::after {
+	z-index: -1;
+position: absolute;
+left: 12px;
+bottom: 12px;
+width: 70%;
+max-width: 300px; /* avoid rotation causing ugly appearance at large container widths */
+max-height: 100px;
+height: 55%;
+content: "";
+-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+-webkit-transform: skew(-15deg) rotate(-6deg);
+-moz-transform: skew(-15deg) rotate(-6deg);
+-ms-transform: skew(-15deg) rotate(-6deg);
+-o-transform: skew(-15deg) rotate(-6deg);
+transform: skew(-15deg) rotate(-6deg); }
+
+
+article::after {
+left: auto;
+right: 10px;
+-webkit-transform: skew(15deg) rotate(6deg);
+-moz-transform: skew(15deg) rotate(6deg);
+-ms-transform: skew(15deg) rotate(6deg);
+-o-transform: skew(15deg) rotate(6deg);
+transform: skew(15deg) rotate(6deg); }
+
+
+article span.note-signature::before{
+	content: "-";
+}
+
+
+article:nth-child(3n+3) span.note-signature{
+	-webkit-transform:  rotate(-7deg);
+	-moz-transform: rotate(-4deg);
+	display: block;	
+	position: relative;
+	top: -1em;
+}
+
+
+
+
+article:nth-child(4n+5) span.note-signature{
+	-webkit-transform:  rotate(7deg);
+	-moz-transform: rotate(4deg);
+	display: block;	
+	position: relative;
+	top: 0;
+	text-align: right;
+}
+
+.note.font-1{ font-family: 'Patrick Hand', cursive; }
+.note.font-2{ font-family: 'Sue Ellen Francisco', cursive;}
+.note.font-3{font-family: 'Neucha', cursive; line-height: 1.33em;}
+.note.font-4{font-family: 'Coming Soon', cursive;}
+.note.font-5{font-family: 'Annie Use Your Telescope', cursive;}
+.note.font-6{font-family: 'Nothing You Could Do', cursive;}
+
+
+article.note-background-yellow{ background: #f9efbe; }
+article.note-background-green{ 
+	background: #f2ff6b;
+	border-color: #f8ffa9;
+	color: #283024;
+}
+article.note-background-blue{ 
+	background: #8ed6ed;
+	border-color: #97e7ff;
+	color: #131d3a;
+}
+article.note-background-salmon{ 
+	background: #ffced7; 
+	color: #4f2378;
+	border-color: #ffd5d6;
+
+}
+article.note-background-pink{ 
+	background: #ff54cc;
+	border-color: #ff57a0;
+}
